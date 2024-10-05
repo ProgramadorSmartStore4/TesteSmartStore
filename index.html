@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload de Imagens para S3</title>
+</head>
+<body>
+    <h1>Upload de Imagens para S3</h1>
+    <form action="upload.php" method="POST" enctype="multipart/form-data">
+        <label for="images">Escolha imagens (PNG ou JPEG):</label>
+        <input type="file" name="images[]" id="images" multiple accept="image/png, image/jpeg" required>
+        <button type="submit">Upload</button>
+    </form>
+</body>
+</html>
+
